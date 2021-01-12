@@ -1,0 +1,47 @@
+
+// ---------------------  media queries --------------------------------
+@mixin for-phone-only {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin for-tablet-portait-only {
+  @media screen and (max-width: 1023px) {
+    @content
+  }
+}
+@mixin for-tablet-landscape-up{
+  @media  screen and ( max-width: 1200px ){
+    @content
+  }
+}
+@mixin for-desktop-up{
+  @media (min-width: 1200px){
+    @content
+  }
+}
+@mixin for-big-desktop-up{
+  @media (min-width: 1800px){
+    @content
+  }
+}
+@mixin up-to-1440{
+  @media (min-width: 1440px){
+    @content
+  }
+}
+
+@mixin font($family, $size, $color, $weight: 400, $serif: sans-serif) {
+  font: {
+    family: $family, $serif;
+    size: $size;
+    weight: $weight;
+  }
+  color: $color;
+}
+
