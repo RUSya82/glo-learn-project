@@ -1,6 +1,8 @@
 // ----- include styles files there --------------
 
 @import "varibles";
+
+// ---- include font-face for website -------------
 @import "fonts";
 
 
@@ -9,5 +11,7 @@
 
 // ------- normalize all styles for document --------
 @import "normalize";
+
+@import "templates";
 
 @import "styles";

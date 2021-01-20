@@ -36,7 +36,8 @@
   }
 }
 
-@mixin font($family, $size, $color, $weight: 400, $serif: sans-serif) {
+//------- mixin for font setting ----------------------
+@mixin font($size, $color, $weight: 400, $family: $font-family, $serif: sans-serif) {
   font: {
     family: $family, $serif;
     size: $size;
@@ -44,4 +45,6 @@
   }
   color: $color;
 }
+
+
 
