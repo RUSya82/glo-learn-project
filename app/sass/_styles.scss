@@ -160,4 +160,88 @@
   }
 
 }
+//------------- Блок с преимуществами ----------------------------------
+.features{
+  padding: 100px 0 140px 0;
+  @include for-tablet-landscape-up{
+    padding-top: calc(50px + (100 - 50)*((100vw - 320px)/(1300 - 320)));;
+  }
+  &__container{
+    padding: 0 15px;
+  }
+  &__head{
+    text-align: center;
+    margin-bottom: 130px;
+    @include font(36px, $site-text-color-dark, 700);
+    @include for-tablet-landscape-up{
+      font-size: calc(24px + (36 - 24)*((100vw - 320px)/(1300 - 320)));
+      margin-bottom: calc(56px + (130 - 56)*((100vw - 320px)/(1300 - 320)));;
+    }
+  }
+  &__slider{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    @include for-phone-only{
+      padding: 0 50px;
+    }
+    p{
+      @include font(16px, $site-text-color-dark, 300);
+      line-height: 20px;
+      margin-top: 35px;
+      text-align: center;
+    }
+  }
+  &__icon{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100%;
+    }
+  }
+  &__header{
+    @include font(20px, $site-text-color-dark, 700);
+    text-align: center;
+    margin-top: 64px;
+  }
+  //---------------------- Стили слайдера в блоке с преимуществами ------------------
+  .slick-slider{
+    min-width: 0;
+  }
+
+  .slick-list{
+    overflow: hidden;
+  }
+
+  .slick-track{
+    display: flex;
+    justify-content: space-between;
+  }
+  //----------- Стрелки слайдера  ---------------------
+  .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 20px;
+    z-index: 10;
+  }
+  .prev{
+    background: url("../img/left-arrow.png") no-repeat;
+    left: 0;
+  }
+  .next{
+    background: url("../img/right-arrow.png") no-repeat;
+    right: 0;
+  }
+
+}
 
