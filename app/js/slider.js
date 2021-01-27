@@ -47,3 +47,10 @@ $('.features__slider').slick({
         }
     ]
 });
+let l;
+l = document.querySelector('.calc-form__button');
+
+
+
+
+

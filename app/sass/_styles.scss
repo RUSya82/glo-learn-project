@@ -57,6 +57,12 @@
   &__btn{
     padding: 20px 27px;
     display: block;
+    cursor: pointer;
+    &:focus, &:active, &:hover{
+      text-decoration: none;
+      cursor: pointer;
+      color: $site-text-color-white;
+    }
     @include font(12px,$btn-font-color);
     @include for-tablet-portrait-up{
       //padding: 12px 20px;
@@ -71,6 +77,7 @@
     a, a:focus, a:active, a:hover{
       color: inherit;
       text-decoration: none;
+      cursor: pointer;
     }
     @include for-tablet-portait-only{
       justify-content: center;
@@ -149,16 +156,21 @@
   }
 }
 .main__half-left{
-  .calc-form{
-    &__button{
-      font-weight: 400;
-      margin-top: 22px;
-    }
+  //.calc-form{
+  //  &__button{
+  //    font-weight: 400;
+  //    margin-top: 22px;
+  //  }
     @include  for-tablet-portait-only{
       margin-top: 50px;
     }
-  }
+}
 
+.calc-form {
+  &__button {
+    font-weight: 400;
+    margin-top: 22px;
+  }
 }
 //------------- Блок с преимуществами ----------------------------------
 .features{
@@ -244,4 +256,5 @@
   }
 
 }
+
 

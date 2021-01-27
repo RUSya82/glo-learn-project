@@ -29,7 +29,7 @@
                                 <a href="#">+7 495 771 05 08</a>
                             </div>
                             <div class="header__button">
-                                <button class="site-button header__btn">получить&nbsp;консультацию</button>
+                                <a class="site-button header__btn popup-button" href="#popup-consult">получить&nbsp;консультацию</a>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,10 @@
                     </div>
                     <div class="main__half-left">
                         <form action="#" class="site-form calc-form">
-                            <h3>Для расчёта точной стоимости<br>закажите <span class="bold">выезд замерщика</span></h3>
+                            <div class="site-form__header">
+                                <h3>Для расчёта точной стоимости<br>закажите <span class="bold">выезд замерщика</span></h3>
+                            </div>
+<!--                            <h3>Для расчёта точной стоимости<br>закажите <span class="bold">выезд замерщика</span></h3>-->
                             <div class="site-input">
                                 <label for="username">Ваше имя</label>
                                 <input type="text" name="username">
@@ -124,8 +127,34 @@
             </div>
         </section>
     </main>
-<!--    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
-<!--    <script src="js/slick.min.js"></script>-->
+<!--    Модальные окна-->
+<!--    Окно Заинтересовало?-->
+    <div class="popup" id="popup-consult">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a class="popup__close" href="#">&times;</a>
+                <form action="#" class="site-form calc-form popup__form">
+                    <div class="site-form__header popup__header">
+                        <h3>Заинтересовало?</h3>
+                        <p>Оставьте контактные данные для связи</p>
+                    </div>
+                    <div class="site-input">
+                        <label for="username">Ваше имя</label>
+                        <input type="text" name="username">
+                    </div>
+                    <div class="site-input">
+                        <label for="userphone">Номер телефона</label>
+                        <input type="tel" name="userphone">
+                    </div>
+                    <div class="site-input">
+                        <label for="message">Сообщение</label>
+                        <textarea name="message"></textarea>
+                    </div>
+                    <button class="site-button calc-form__button" type="submit">Оставьте заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </div>
 </body>

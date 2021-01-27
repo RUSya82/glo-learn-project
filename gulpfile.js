@@ -115,7 +115,7 @@ gulp.task('serve', function(done) {
     gulp.watch("app/sass/*.s*ss", gulp.series('sass'));
     gulp.watch("app/js/*.js", gulp.series('build-js'));
     gulp.watch("app/*.html", gulp.series('html'));
-    // gulp.watch("app/img/**/*.*", gulp.series('images'));
+    gulp.watch("app/img/**/*.*", gulp.series('images'));
     gulp.watch("app/*.*").on('change', () => {
       browserSync.reload();
       done();
